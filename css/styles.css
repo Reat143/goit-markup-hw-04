@@ -19,6 +19,7 @@
   --white: #ffffff;
   --black: #000000;
   --border-color: #ececec;
+  --icon-color: #AFB1B8;
   /* Background colors */
   --first-bg-color: #f5f4fa;
   --second-bg-color: #2f303a;
@@ -41,6 +42,7 @@ p,
 ul {
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
 }
 .list {
   padding-left: 0;
@@ -300,8 +302,7 @@ ul {
   height: auto;
 }
 .team-form {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px 30px 32px;
 }
 .team-member-name {
   margin-bottom: 10px;
@@ -318,6 +319,81 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-bottom: 16px;
+}
+.team-icon-list {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+.team-icon-item {
+width: 44px;
+height: 44px;
+}
+.team-icon-link {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ height: 100%;
+ color: var(--icon-color);
+ border-radius: 50%;
+}
+.team-icon {
+  display: block;
+  fill: currentColor;
+}
+.team-icon-link:hover {
+  background-color: var(--accent-color);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.team-icon-link:hover .team-icon {
+  fill: var(--white);
+}
+
+/* Clients */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--first-bg-color);
+}
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+  padding-left: auto;
+  padding-right: auto;
+}
+.clients-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--icon-color);
+  padding: 16px 32px;
+}
+.clients-item:hover {
+  border: 1px solid var(--accent-color);
+}
+.clients-item:hover .clients-link {
+  fill: var(--accent-color)
 }
 
 /* Footer */
