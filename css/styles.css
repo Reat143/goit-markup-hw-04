@@ -398,6 +398,7 @@ height: 44px;
 
 /* Footer */
 .footer {
+  display: flex;
   margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -450,6 +451,11 @@ height: 44px;
 .footer-mail-link:focus,
 .footer-tel-link:focus {
   color: var(--accent-color);
+}
+.footer-icon-section {
+  display: block;
+  margin-left: 70px;
+  /* align-items: baseline; */
 }
 
 /* Portfolio */
