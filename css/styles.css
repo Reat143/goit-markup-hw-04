@@ -136,16 +136,18 @@ ul {
   text-decoration: none;
   color: var(--main-text-color);
 }
+.mail-link-item,
+.tel-link-item {
+  margin-right: 10px;
+  fill: currentColor;
+}
 .mail-link:hover,
 .tel-link:hover,
 .mail-link:focus,
 .tel-link:focus {
   color: var(--accent-color);
 }
-.mail-link-item, .tel-link-item {
-  margin-right: 10px;
-  fill: currentColor;
-}
+
 /* Main */
 
 /* Hero */
